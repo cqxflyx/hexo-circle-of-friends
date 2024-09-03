@@ -25,7 +25,7 @@ class GetUrl:
         self.handle(avatar, link, name, queue, "common1")
 
     def get_common2_url(self, response, queue):
-        avatar = response.css('.cf-friends-avatar::attr(data-lazy-src)').extract()
+        avatar = response.css('.cf-friends-avatar::attr(data-src)').extract()
         if not avatar:
             avatar = response.css('img.cf-friends-avatar::attr(src)').extract()
         link = response.css('a.cf-friends-link::attr(href)').extract()
