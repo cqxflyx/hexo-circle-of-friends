@@ -133,7 +133,6 @@ class GetUrl:
 
     def handle(self, avatar, link, name, queue, theme):
         user_info = []
-        print(len(avatar),len(link),len(name),avatar,link,name)
         if len(avatar) == len(link) == len(name):
             ...
         else:
